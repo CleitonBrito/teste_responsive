@@ -1,0 +1,69 @@
+body {
+	margin: 0px;
+}
+
+.cabecalho {
+	background-color: #ff0000;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+	flex: 1;
+}
+
+.col-5 {
+	width: 50%;
+}
+
+.col-5.menu {
+	margin: auto;
+}
+
+.col-2.logo {
+	margin: 2%;
+	width: 10%;
+}
+
+h2 {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 2em;
+}
+
+.col-3.title {
+	display: flex;
+	vertical-align: middle;
+	width: 60%;
+}
+
+img.logo {
+	width: 100%;
+	border-radius: 50%;
+}
+
+img.banner {
+	width: 100%;
+	height: 15em;
+}
+
+ul {
+	justify-content: center;
+	padding: 0px;
+}
+
+li {
+	
+	list-style: none;
+	font-size: 1.5em;
+}
+
+li.item {
+	margin-right: 2%;
+	margin-left: 2%;
+}
