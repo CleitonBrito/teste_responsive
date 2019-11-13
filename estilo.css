@@ -6,6 +6,28 @@ body {
 	background-color: #ff0000;
 }
 
+.container.corpo2 {
+	padding-left: 3em;
+	padding-right: 3em;
+	margin: auto;
+}
+
+.container.rodape {
+	width: 100%;
+	height: 2em;
+	background-color: #350000;
+}
+
+.texto-rodape {
+	color: #fff;
+	font: -webkit-small-control;
+}
+
+.row-rodape {
+	height: 80%;
+	background-color: #9a0000;
+}
+
 .flex {
 	display: flex;
 }
@@ -15,25 +37,60 @@ body {
 	flex: 1;
 }
 
+.text-center {
+	text-align: center;
+}
+
+div.col-1.icon-menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: right;
+	display: none;
+	cursor: pointer;
+}
+
+.col-3 {
+	width: 50%;
+	min-width: 250px;
+	padding: 1%;
+}
+
 .col-5 {
 	width: 50%;
+	height: 3em;
 }
 
 .col-5.menu {
 	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex: 1;
 }
 
 .col-2.logo {
-	margin: 2%;
-	width: 10%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 3em;
+	width: 40%;
 }
 
 h2 {
+	font-family: 'Asap Condensed', sans-serif;
 	width: 100%;
 	margin: auto;
 	text-align: center;
 	vertical-align: middle;
 	font-size: 2em;
+}
+
+h6 {
+	font-family: 'Nunito', sans-serif;
+	padding: 0.3em;
+	margin: 0px;
 }
 
 .col-3.title {
@@ -42,28 +99,190 @@ h2 {
 	width: 60%;
 }
 
-img.logo {
+.row.caixas {
 	width: 100%;
+}
+
+.caixa {
+	width: 100%;
+	min-width: 150px;
+	border-radius: 0.5em;
+	border-style: solid;
+}
+
+.btn.comprar {
+	width: 70%;
+	font-family: 'Nunito', sans-serif;
+	font-size: 0.7em;
+	font-weight: bold;
+	border: none;
+	padding: 0.2em;
+	margin-bottom: 1em;
+	border-radius: 2em;
+	background-color: #7a0007;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000!important;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.btn.comprar:hover {
+	cursor: pointer;
+	background-color: #f00;
+	border-color: #000!important;
+	color: #000;
+}
+
+.btn.comprar:focus {
+	outline: none!important;
+}
+
+.btn.comprar:active {
+	color: #905e5e;
+	background-color: #675454;
+	box-shadow: 2px 2px #000;
+}
+
+.btn.login {
+	width: 8em;
+	background-color: #000;
+	border-radius: 2em;
+	color: #eee;
+}
+
+.btn.login:hover {
+	cursor: pointer;
+}
+
+.btn.login:focus {
+	outline: none!important;
+}
+
+.btn.login:active {
+	border-style: double;
+	color: #696969;
+}
+
+img.logo {
+	width: 2em;
 	border-radius: 50%;
 }
 
+img.img-produto {
+	width: 10.5em;
+	height: 6.5em;
+}
+
+img.img-menu {
+	width: 80%;
+}
+
+.produto img.img-secondary{
+	display: none;
+}
+
+.produto:hover img.img-primary{
+	display: none;
+}
+
+.produto:hover img.img-secondary{
+	display: initial;
+	cursor: grab;
+}
+
+.centavos {
+	font-size: 0.5em;
+}
+
+span.preco {
+	font-size: 1em;
+	font-family: 'Yeon Sung', cursive;
+}
+
+span.descricao {
+	font-size: 0.7em;
+	font-family: 'Asap', sans-serif;
+}
+
+
 img.banner {
 	width: 100%;
-	height: 15em;
+}
+
+.row-banner {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+}
+
+h2.texto-img {
+	font-family: 'Asap Condensed', sans-serif;
+	position: absolute;
+	top: 0%;
+	font-size: 2.5em;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    transition-timing-function: cubic-bezier(0.65, 0.03, 0.12, 0,96)!important;
+}
+
+h2.texto-img:hover {
+	background-color: #000000e0;
+	color: #eee;
+	transition: 0.5s;
 }
 
 ul {
 	justify-content: center;
 	padding: 0px;
+	margin: 0.1em;
 }
 
 li {
-	
+	font-family: 'Asap Condensed', sans-serif;
 	list-style: none;
 	font-size: 1.5em;
 }
 
 li.item {
+	display: flex;
 	margin-right: 2%;
 	margin-left: 2%;
+}
+
+li.item:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+@media all and (max-width: 850px){
+	h2.texto-img {
+		font-size: 1em;
+	}
+
+	ul.itens-menu {
+		display: none;
+	}
+
+	.col-5.flex {
+		width: 100%;
+	}
+
+	.col-2.logo {
+		width: 20%;
+	}
+
+	.col-3.title {
+		width: 70%;
+	}
+
+	div.col-1.icon-menu {
+		display: flex;
+	}
 }
