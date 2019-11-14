@@ -34,7 +34,7 @@ body {
 
 .flex-wrap {
 	flex-wrap: wrap;
-	flex: 1;
+	flex: 2;
 }
 
 .text-center {
@@ -51,8 +51,9 @@ div.col-1.icon-menu {
 }
 
 .col-3 {
-	width: 50%;
-	min-width: 250px;
+	width: 100%;
+	min-width: 300px;
+	max-width: 25%;
 	padding: 1%;
 }
 
@@ -96,7 +97,7 @@ h6 {
 .col-3.title {
 	display: flex;
 	vertical-align: middle;
-	width: 60%;
+	width: 50%;
 }
 
 .row.caixas {
